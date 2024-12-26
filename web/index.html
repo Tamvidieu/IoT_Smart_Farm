@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Farm Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script type="module" src="script.js"></script>
+</head>
+<body>
+    <div class="container">
+        <button class="logout-btn">Logout</button>
+        <h1>Smart Farm Dashboard</h1>
+        <div class="chart-row">
+            <canvas id="humidityChart"></canvas>
+            <canvas id="soilMoistureChart"></canvas>
+            <canvas id="temperatureChart"></canvas>
+        </div>
+        <div class="chart-row">
+            <canvas id="heaterChart"></canvas>
+            <canvas id="humidifierChart"></canvas>
+            <canvas id="pumpChart"></canvas>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,64 @@
+body {
+    background: url('background.jpg') no-repeat center center fixed;
+    background-size: cover;
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 95%;
+    max-width: 1200px;
+    text-align: center;
+    padding: 0px;
+    background-color: rgba(2, 46, 16, 0.364); 
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    position: relative;
+}
+
+.logout-btn {
+    background-color: #0acf7a;
+    color: rgb(14, 9, 9);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    transition: background-color 0.3s ease;
+}
+
+.logout-btn:hover {
+    background-color: #04872f;
+}
+
+h1 {
+    color: #ffffff;
+    margin-bottom: 20px;    
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.chart-row {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+
+canvas {
+    flex: 1;
+    max-width: 32%;
+    max-height: 230px;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+}

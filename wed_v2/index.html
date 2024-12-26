@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Farm Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script type="module" src="script.js"></script>
+</head>
+<body>
+    <div class="container">
+        <!-- Removed Logout Button -->
+        <h1>Smart Farm Dashboard</h1>
+        <!-- New Trigger Input Fields and Save Button -->
+        <div class="input-row">
+            <label for="humidityTrigger">Humidity Trigger:</label>
+            <input type="number" id="humidityTrigger" name="humidityTrigger">
+            <label for="soilMoistureTrigger">Soil Moisture Trigger:</label>
+            <input type="number" id="soilMoistureTrigger" name="soilMoistureTrigger">
+            <label for="temperatureTrigger">Temperature Trigger:</label>
+            <input type="number" id="temperatureTrigger" name="temperatureTrigger">
+            <button id="saveTriggerBtn">Save Trigger</button>
+        </div>
+        <div class="chart-row">
+            <canvas id="humidityChart"></canvas>
+            <canvas id="soilMoistureChart"></canvas>
+            <canvas id="temperatureChart"></canvas>
+        </div>
+        <div class="chart-row">
+            <canvas id="heaterChart"></canvas>
+            <canvas id="humidifierChart"></canvas>
+            <canvas id="pumpChart"></canvas>
+        </div>
+    </div>
+</body>
+</html>
